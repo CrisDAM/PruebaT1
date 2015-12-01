@@ -1,0 +1,35 @@
+.background {
+	-fx-background-color:#008080;
+}
+
+.buttonTop {
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+	-fx-background-color:#008080;
+    -fx-font-family: "Arial Narrow", Helvetica, Arial, sans-serif;
+    -fx-font-size: 11pt;
+    -fx-text-fill: #FFFFFF;
+}
+
+.buttonEnviar{
+	-fx-background-image: url("file:img/send.png");
+	-fx-background-radius: 100;
+}
+
+.label-header{
+	-fx-font-family: "Arial Narrow", Helvetica, Arial, sans-serif;
+	-fx-font-size:25pt;
+	-fx-text-fill: #008080;
+	-fx-font-weight: bold;
+}
+
+.region{
+	-fx-background-color:#008080;
+}
+
+.labelForm{
+	-fx-font-family: "Arial Narrow", Helvetica, Arial, sans-serif;
+	-fx-text-fill: #FFFFFF;
+	-fx-font-size: 18pt;
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="vista.Ventana1Controller">
+   <children>
+      <BorderPane stylesheets="@estilos.css" AnchorPane.bottomAnchor="32.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="92.0">
+         <center>
+            <ImageView fx:id="imageCenter" fitHeight="124.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../../img/profilephoto.png" />
+               </image>
+               <BorderPane.margin>
+                  <Insets bottom="80.0" top="50.0" />
+               </BorderPane.margin>
+            </ImageView>
+         </center>
+         <bottom>
+            <VBox alignment="CENTER" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="lblAutor" layoutX="233.0" layoutY="262.0" text="Jat R." />
+                  <Label fx:id="lblFrase" layoutX="233.0" layoutY="295.0" text="Programmers can design" />
+               </children>
+            </VBox>
+         </bottom>
+         <top>
+            <Label fx:id="lblProfile" prefHeight="21.0" prefWidth="173.0" styleClass="label-header" stylesheets="@estilos.css" text="My Profile" BorderPane.alignment="CENTER" />
+         </top>
+      </BorderPane>
+      <Button fx:id="btnEnviar" layoutX="411.0" layoutY="329.0" mnemonicParsing="false" onAction="#onClickEnviar" prefHeight="42.0" prefWidth="53.0" styleClass="buttonEnviar" stylesheets="@estilos.css" AnchorPane.bottomAnchor="40.0" AnchorPane.rightAnchor="24.0">
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnTop" maxWidth="180.0" minWidth="180.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="179.0" style="-fx-background-color: #008080;" stylesheets="@estilos.css" text="View in GitHub" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="20.0" />
+      <Region fx:id="regionTop" prefHeight="69.0" prefWidth="500.0" styleClass="region" stylesheets="@estilos.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <ImageView fx:id="imageTop" fitHeight="69.0" fitWidth="92.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../../img/github_white.png" />
+         </image>
+      </ImageView>
+      <Region fx:id="regionBottom" prefHeight="31.0" prefWidth="500.0" styleClass="region" stylesheets="@estilos.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+   </children>
+</AnchorPane>
